@@ -19,7 +19,7 @@ h1.name_tag_h1{
 
 a.link{
     position: relative;
-    float: left;
+    float: none;
     color:#777777;
     text-decoration: none;
 }
@@ -184,7 +184,7 @@ input.message{
 h1.name_tag_h1{
     margin: 0;
     width: 100%;
-    float: left;
+    float: none;
     margin: 0;
     text-align: center;
     padding: 25px 0;
@@ -223,7 +223,7 @@ div.menu{
     text-align: center;
     top: 20px;
     right: 15px;
-    float: left;
+    float: none;
 }
 
 }
