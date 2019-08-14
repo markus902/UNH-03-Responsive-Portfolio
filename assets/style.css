@@ -1,12 +1,10 @@
-
-
-body{
+body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1.name_tag_h1{
+h1.name_tag_h1 {
     position: relative;
     float: left;
     width: auto;
@@ -17,46 +15,47 @@ h1.name_tag_h1{
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-a.link{
+a.link {
     position: relative;
     float: none;
-    color:#777777;
+    color: #777777;
     text-decoration: none;
 }
 
-a.left_link, a.right_link{
+a.left_link,
+a.right_link {
     padding: 0 15px 0 15px;
     margin: 0;
 }
 
-a.center_link{
+a.center_link {
     border-left: 1px solid #777777;
     border-right: 1px solid #777777;
     padding: 0 15px 0 15px;
 }
 
-a:hover{
+a:hover {
     background-color: #777777;
     color: #ffffff;
 }
 
-a.text_link{
-    color:#777777;
+a.text_link {
+    color: #777777;
 }
 
-a.text_link:hover{
+a.text_link:hover {
     color: #ffffff;
 }
 
-div.menu{
+div.menu {
     float: left;
     position: absolute;
     top: 50px;
     right: 15%;
-    margin:10px 0;
+    margin: 10px 0;
 }
 
-section.main_background{
+section.main_background {
     float: left;
     position: relative;
     background-image: url("../images/papyrus.png");
@@ -64,13 +63,13 @@ section.main_background{
     border-top: 2px solid #cccccc;
     width: 100%;
     height: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     padding-top: 15px;
     padding-bottom: 100px;
     clear: both;
 }
 
-div.paragraph_container{
+div.paragraph_container {
     background-color: #ffffff;
     height: auto;
     margin: 0px 15%;
@@ -82,34 +81,35 @@ div.paragraph_container{
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-h1{
+h1 {
     font-size: 28px;
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-h1.paragraph_headline{
+h1.paragraph_headline {
     position: relative;
     float: left;
     margin: 20px 0 20px 0;
     padding-left: 20px;
 }
 
-p{
+p {
     color: #777777;
     line-height: 1.5;
     margin: 0;
     text-align: justify;
+    img
 }
 
-h1.paragraph_headline{
+h1.paragraph_headline {
     float: left;
     color: #4aaaa5;
     clear: both;
 }
 
-div.paragraph_image_wrapper{
+div.paragraph_image_wrapper {
     position: relative;
     clear: both;
     border-top: 2px solid #dddddd;
@@ -118,20 +118,24 @@ div.paragraph_image_wrapper{
     height: auto;
 }
 
-img.me_image{
+img.me_image {
     float: left;
     padding-right: 15px;
     padding-top: 5px;
 }
 
-div.portfolio_image{
+div.portfolio_image {
     float: left;
     position: relative;
     margin: 20px 20px 0 20px;
     border-radius: 30px;
+    width: 300px;
+    height: 300px;
+
+    overflow: hidden;
 }
 
-div.project_div{
+div.project_div {
     float: left;
     position: absolute;
     bottom: 40px;
@@ -143,17 +147,17 @@ div.project_div{
     font-size: 23px;
 }
 
-div.project_div:hover{
+div.project_div:hover {
     background-color: #283635;
 }
 
-div.placeholder{
+div.placeholder {
     height: 60px;
     width: 100%;
     float: left;
 }
 
-section.footer{
+section.footer {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -164,71 +168,83 @@ section.footer{
     text-align: center;
 }
 
-h6{
+h6 {
     font-weight: 100;
 }
 
-input.form_style{
+input.form_style {
     position: relative;
-    width: 98%;  
-    height: 16px; 
+    width: 98%;
+    height: 16px;
 }
 
-input.message{
+input.message {
     height: 200px;
+}
+
+img.portfolio_img {
+    max-width: 300px;
+    max-height: 300px;
 }
 
 
 @media screen and (max-width: 640px) {
-    
-h1.name_tag_h1{
-    margin: 0;
-    width: 100%;
-    float: none;
-    margin: 0;
-    text-align: center;
-    padding: 25px 0;
-}
 
-div.menu{
-    position: unset;
-    margin: 10px 0;
-    text-align: center;
-}
+    h1.name_tag_h1 {
+        margin: 0;
+        width: 100%;
+        float: none;
+        margin: 0;
+        text-align: center;
+        padding: 25px 0;
+    }
 
-img.portfolio_img{
-    width: 100%;
-    height: auto;
-}
+    div.menu {
+        position: unset;
+        margin: 10px 0;
+        text-align: center;
+    }
 
-img.me_image{
-    width: 100%;
-    margin-bottom: 5px;
-}
+    img.portfolio_img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    img.me_image {
+        width: 100%;
+        margin-bottom: 5px;
+    }
 
 }
 
 @media screen and (max-width: 768px) {
-h1.name_tag_h1{
-    margin-top: 0;
-    margin-left: 0;
+    h1.name_tag_h1 {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    div.paragraph_container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    div.menu {
+        text-align: center;
+        top: 20px;
+        right: 15px;
+        float: none;
+    }
+
+    img.me_image {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    img.portfolio_img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
 }
 
-div.paragraph_container{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-div.menu{
-    text-align: center;
-    top: 20px;
-    right: 15px;
-    float: none;
-}
-
-}
-
-@media only screen and (max-width: 980px) {
-
-
-}
+@media only screen and (max-width: 980px) {}
